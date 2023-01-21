@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { StudentInfoService } from 'src/app/services/student-info.service';
 
 @Component({
   selector: 'app-user',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserPage implements OnInit {
 
-  constructor() { }
+  constructor(private studentInfo: StudentInfoService) { }
 
   ngOnInit(): void {
+    console.log("Estoy en el user: ", this.studentInfo.student);
+    this.studentInfo.student.carrera = "Backend";
   }
 
 }
