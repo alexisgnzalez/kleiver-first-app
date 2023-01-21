@@ -7,18 +7,28 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ButtonComponent } from './components/button/button.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { NavigationComponent } from './components/navigation/navigation.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ButtonComponent
+    ButtonComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
