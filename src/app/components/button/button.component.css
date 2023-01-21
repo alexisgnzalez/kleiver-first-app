@@ -1,0 +1,9 @@
+.button {
+  max-width: 85px;
+  background-color: blue;
+  border-radius: 5px;
+  padding: 10px;
+  color: aliceblue;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+  cursor: pointer;
+}
